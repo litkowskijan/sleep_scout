@@ -1,0 +1,170 @@
+.search__section {
+    background-color: $color-dark-green;
+
+    .search__form {
+        padding-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+
+        @include small_desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            color: $color-almost-white-olive;
+            font-size: 1.8rem;
+            line-height: 3rem;
+        }
+
+        input {
+            margin-bottom: 4vh;
+            background-color: $color-dark-green;
+            border: none;
+            border-bottom: 2px solid $color-almost-white-olive;
+            font-size: 1.5rem;
+            color: $color-almost-white-olive;
+            font-weight: 200;
+
+            &::placeholder {
+                color: $color-almost-white-olive;
+                font-family: $font-sans-serif;
+                font-weight: 100;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        .destination__box {
+            display: flex;
+            flex-direction: column;
+
+            @include small_desktop {
+                width: 45%;
+            }
+        }
+
+        .date__range__box {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            @include small_desktop {
+                width: 45%;
+            }
+
+            .date__range__input {
+                font-weight: 100;
+    
+                &:focus {
+                    font-weight: 200;
+                }
+            }
+    
+        }
+        
+        .guests__box {
+            display: flex;
+            flex-direction: column;
+
+            @include small_desktop {
+                width: 45%;
+            }
+        }
+
+        .search__button {
+            padding: 2px 10px;
+            border: 1px solid $color-dark-green;
+            font-size: 1.8rem;
+            font-family: $font-serif;
+            background-color: $color-light-olive;
+            box-shadow: 5px 5px 0 0 $color-dark-green;
+            color: $color-dark-green;
+            margin-bottom: 5vh;
+            font-weight: 700;
+            height: 60px;
+            width: 45%;
+
+            @include small_desktop {
+                width: 45%;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.calendar__box {
+
+    .date__range__picker {
+        width: 100%;
+        @include flex;
+    
+        .rdrDefinedRangesWrapper, .rdrDateDisplayWrapper {
+            display: none;
+        }
+        
+        .rdrCalendarWrapper {
+            max-width: 280px;
+        }
+        
+        .rdrMonthAndYearWrapper {
+            max-width: 280px;
+            background-color: $color-light-olive;
+            border: 1px solid $color-dark-green;
+            border-bottom: none;
+        }
+    
+        .rdrMonth {
+            max-width: 280px;
+            background-color: $color-light-olive;
+            border: 1px solid $color-dark-green;
+            border-top: none;
+        }
+        
+        .rdrMonthPicker, .rdrYearPicker {
+            select, option {
+                font-family: $font-serif;
+            }
+        }
+        
+        .rdrNextPrevButton {
+            color: $color-dark-green;
+        }
+     
+        .rdrStartEdge, .rdrEndEdge, .rdrInRange {
+            background-color: $color-dark-green;
+        }
+        
+        .rdrDayStartPreview, .rdrDayInPreview, .rdrDayEndPreview {
+            border-color: $color-dark-green;
+        }
+        
+        .rdrDayToday {
+            .rdrDayNumber {
+                span {
+                    &::after {
+                        background-color: $color-dark-green;
+                    }
+                }
+            }
+        }
+    }
+    
+    .accept__button {
+        padding: 2px 10px;
+        border: 1px solid $color-dark-green;
+        font-size: 1.5rem;
+        font-family: $font-serif;
+        background-color: $color-light-olive;
+        color: $color-dark-green;
+        width: 280px;
+        @include flex;
+        margin: 0 auto;
+    }
+}

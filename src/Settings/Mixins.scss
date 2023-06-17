@@ -1,0 +1,50 @@
+//media-queries
+
+@mixin tablet {
+    @media (mix-width: 480px) {
+        @content;
+    }
+}
+
+@mixin small_desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin big_desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin full_desktop {
+    @media (min-width: 1408px) {
+        @content;
+    }
+}
+
+//flex
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+@mixin flex_x {
+    display: flex;
+    justify-content: center;
+}
+  
+@mixin flex_y {
+    display: flex;
+    align-items: center;
+}
+  
