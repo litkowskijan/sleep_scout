@@ -75,7 +75,7 @@ const Search2 = () => {
 
     useEffect(() => {
       const fetchData = () => {
-        fetch('http://localhost:3001/hotels')
+        fetch('https://sleep-scout-data.onrender.com/hotels')
           .then(response => response.json())
           .then(jsonData => {
             setData(jsonData);
