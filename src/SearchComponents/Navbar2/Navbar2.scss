@@ -1,0 +1,168 @@
+.left_0 {
+    left: 0;
+}
+
+.left_500 {
+    left: -500%;
+}
+
+.navbar__section2 {
+    height: 10vh;
+    background: $color-light-olive;
+    position: relative;
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+
+        .navbar__logo {
+            line-height: 10vh;
+            font-size: 2.5rem;
+            color: $color-dark-green;
+            font-weight: 600;
+        }
+
+        .navbar__hamburger__icon {
+            height: 10vh;
+            font-size: 2.5rem;
+            
+            @include small_desktop {
+                display: none;
+            }
+
+            path {
+                color: $color-dark-green;
+            }
+        }
+    }
+
+    .navbar__hamburger {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        transition: 0.5s ease;
+        background-color: $color-almost-white-olive;
+        border-bottom: 1px solid $color-dark-green;
+        max-width: 1280px;
+        z-index: 4;
+
+        @include small_desktop {
+            left: 5%;
+            background: none;
+            border: none;
+            flex-direction: row;
+            height: 10vh;
+            align-items: center;
+            justify-content: flex-end;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
+
+        @include big_desktop {
+            right: 5%;
+        }
+
+        .navbar__menu {
+            @include flex;
+            flex-direction: column;
+            width: 100%;
+            height: 80%;
+            position: relative;
+
+            @include small_desktop {
+                flex-direction: row;
+                gap: 8px;
+                width: auto;
+            }
+
+            @include desktop {
+                gap: 12px;
+            }
+
+            @include big_desktop {
+                gap: 16px;
+            }
+            
+            .navbar__menu__el {
+                @include small_desktop {
+                    color: $color-dark-green;
+                    font-weight: 600;
+                }
+            }
+
+            .navbar__hamburger__exit {
+                font-size: 2.5rem;
+                position: absolute;
+                top: 0;
+                right: 5%;
+                height: 10vh;
+
+                @include small_desktop {
+                    display: none;
+                }
+
+                path {
+                    color: $color-dark-green;
+                }
+            }
+        }
+        
+        .navbar__buttons {
+            width: 80%;
+            max-width: 350px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+            height: 20%;
+
+            @include small_desktop {
+                width: auto;
+                margin: 0;
+                height: 100%;
+            }
+
+            @include desktop {
+                margin-left: 30px;
+            }
+
+            .navbar__btn {
+                padding: 2px 10px;
+                border: 1px solid $color-dark-green;
+                font-size: 1.5rem;
+                font-family: $font-serif;
+                margin-top: -60px;
+                z-index: 2;
+                background-color: $color-light-olive;
+                box-shadow: 2px 2px 12px 0px $color-dark-green;
+                color: $color-almost-white-olive;
+
+
+                @include small_desktop {
+                    margin: 0 8px;
+                    font-size: 1.2rem;
+                }
+
+                @include desktop {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .btn__signup {
+                background-color: $color-dark-green;
+            }
+        }
+    }
+}

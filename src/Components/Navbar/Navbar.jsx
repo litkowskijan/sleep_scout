@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { VscMenu, VscClose } from 'react-icons/vsc';
 
 const Navbar = () => {
-
+    
+    //-----HamburgerVisibility-----
     const [HamburgerPosition, setHamburgerPosition] = useState('navbar__hamburger left_500')
 
     const showHamburger = () => {
@@ -12,6 +13,7 @@ const Navbar = () => {
     const hideHamburger = () => {
         setHamburgerPosition('navbar__hamburger left_500')
     }
+    //-----HamburgerVisibility-----
 
     return (
         <section className='navbar__section'>

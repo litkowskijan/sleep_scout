@@ -144,8 +144,8 @@
                 margin-top: -60px;
                 z-index: 2;
                 background-color: $color-light-olive;
-                box-shadow: 5px 5px 0 0 $color-dark-green;
-                color: $color-dark-green;
+                color: $color-almost-white-olive;
+                box-shadow: 4px 4px 5px 0px $color-light-olive;
 
                 @include small_desktop {
                     margin: 0 8px;
@@ -155,14 +155,13 @@
                 @include desktop {
                     font-size: 1.5rem;
                 }
-
             }
 
+            .btn__login {
+                box-shadow: 4px 4px 5px 0px $color-dark-green;
+            }
             .btn__signup {
-                color: $color-almost-white-olive;
-                background-color: #4a825d;
-                box-shadow: 5px 5px 0 0 $color-dark-green;
-                border: 1px solid $color-dark-green;
+                background-color: $color-dark-green;
             }
         }
     }

@@ -24,11 +24,6 @@
     }
 }
 
-@mixin full_desktop {
-    @media (min-width: 1408px) {
-        @content;
-    }
-}
 
 //flex
 

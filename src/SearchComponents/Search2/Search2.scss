@@ -1,0 +1,406 @@
+.search__section2 {
+    background-color: $color-dark-green;
+    
+    .search__form {
+        padding-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+
+        @include small_desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: $color-almost-white-olive;
+        }
+
+        input {
+            margin-bottom: 4vh;
+            background-color: $color-dark-green;
+            border: none;
+            border-bottom: 2px solid $color-almost-white-olive;
+            font-size: 1.5rem;
+            color: $color-almost-white-olive;
+            font-weight: 200;
+
+            &::placeholder {
+                color: $color-almost-white-olive;
+                font-family: $font-sans-serif;
+                font-weight: 100;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        .destination__box {
+            display: flex;
+            flex-direction: column;
+
+            @include small_desktop {
+                width: 30%;
+            }
+        }
+
+        .date__range__box {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            @include small_desktop {
+                width: 30%;
+            }
+
+            .date__range__input {
+                font-weight: 100;
+    
+                &:focus {
+                    font-weight: 200;
+                }
+            }
+        }
+        
+        .guests__box {
+            display: flex;
+            flex-direction: column;
+
+            @include small_desktop {
+                width: 30%;
+            }
+        }
+    }
+}
+
+
+
+.search__page__section {
+    min-height: 200px;
+    background-color: $color-almost-white-olive;
+
+    .search__page__container {
+        width: 90%;
+
+        .search__page__1row {
+            padding: 5% 0 2.5% 0;           
+
+            @include small_desktop {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            @include desktop {
+                padding: 3% 0 2% 0;
+            }
+
+            .search__page__title {
+                font-size: 2rem;
+                color: $color-dark-green;
+                font-weight: 600;
+            }
+
+            .sort__box {
+                width: 100%;
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+
+                @include small_desktop {
+                    width: 50%;
+                    margin-top: 0;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+
+                .sort__label {
+                    font-size: 1.5rem;
+                    margin-right: 3%;
+                }
+
+                .sort__select {
+                    border: none;
+                    border-bottom: 3px solid $color-dark-green;
+                    background-color: $color-almost-white-olive;
+                    font-size: 1rem;
+                    width: 66%;
+
+                    @include small_desktop {
+                        width: 70%;
+                    }
+                    &:focus {
+                        outline: none;
+                        border-bottom: 3px solid $color-dark-green;
+                    }
+
+                    
+
+                    .sort__option {
+                        background-color: $color-almost-white-olive;
+                        border: 1px solid $color-dark-green;
+
+                        &:hover {
+                            background-color: $color-dark-green;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search__results {
+            display: flex;
+            flex-direction: column;
+
+            @include small_desktop {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .hotel__box {
+                width: 100%;
+                background-color: $color-dark-green;
+                margin: 2.5% 0;
+                border-radius: 20px;
+                box-shadow: 0px 0px 50px 0px $color-dark-green;
+
+                @include small_desktop {
+                    width: 48%;
+                    margin: 1%;
+                }
+
+                @include desktop {
+                    width: 30%;
+                    margin: 1.66%;
+                }
+
+                .hotel__image {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px 20px 0 0;
+                }
+                
+                .hotel__text__box {
+                    width: 90%;
+                    margin: 5% auto;
+
+                    .hotel__title {
+                        color: $color-almost-white-olive;
+                        font-size: 2.5rem;
+                        min-height: 50px;
+
+                        @include small_desktop {
+                            font-size: 2rem;
+                        }
+
+                        @include desktop
+                    }
+                    
+                    .hotel__price__box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 2%;
+                        min-height: 30px;
+
+                        .hotel__final__price {
+                            color: $color-almost-white-olive;
+                            font-size: 1.5rem;
+                            font-family: $font-sans-serif;
+                        }
+                        .hotel__price {
+                            color: $color-light-olive;;
+                            margin-left: auto;
+                            font-family: $font-sans-serif;
+                        }
+                    }
+                    
+    
+                    .hotel__lead {
+                        color: $color-almost-white-olive;
+                        font-family: $font-sans-serif;
+                        margin: 10% 0;
+                        min-height: 50px;
+                    }
+                    
+                    .hotel__cityrating__box {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .hotel__city {
+                            color: $color-light-olive;
+                            font-family: $font-sans-serif;
+
+                        }
+                        
+                        .hotel__guests {
+                            color: $color-light-olive;
+                            font-family: $font-sans-serif;
+                        }
+
+                        .hotel__rating {
+                            color: $color-light-olive;
+                            font-family: $font-sans-serif;
+
+                        }
+                    }
+                }
+                
+                .hotel__details__button {
+                    border: none;
+                    width: 100%;
+                    margin: 5% 0 2.5% 0;
+                    padding: 5px;
+                    font-size: 1.2rem;
+                    border-radius: 5px;
+                    background-color: $color-light-olive;
+                    font-family: $font-serif;
+                    font-weight: 500;
+                    color: $color-dark-green;
+                }
+            }
+
+            .hotel__details__box {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                background-color: rgba(0, 0, 0, 0.5);
+                @include flex;
+                z-index: 5;
+
+                .hotel__details__content {
+                    width: 90%;
+                    height: 90%;
+                    background-color: $color-light-olive;
+                    border-radius: 15px;
+                    overflow: auto;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                      }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 15px 15px 0 0;
+                    }
+                    
+                    .hotel__details__info {
+                        padding: 5%;
+
+                        .hotel__details__title {
+                            font-size: 2rem;
+                            color: $color-almost-white-olive;
+                            margin-bottom: 5%;
+                        }
+
+                        .hotel__details__description {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                            font-family: $font-sans-serif;
+                            font-weight: 200;
+                        }
+
+                        .hotel__details__final__price {
+                            font-size: 2rem;
+                            margin-top: 5%;
+                            width: 100%;
+                            text-align: center;
+                            background-color: $color-dark-green;
+                            border-radius: 15px;
+                            padding: 4% 0;
+                            color: white;
+                        }
+
+                        .hotel__details__price {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 1.5rem;
+                            margin-top: 2%;
+                        }
+
+                        .hotel__details__other__info {
+                            font-size: 2rem;
+                            color: $color-almost-white-olive;
+                            margin-top: 5%;
+                        }
+
+                        .hotel__details__guests {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                        }
+
+                        .hotel__details__beds {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                        }
+
+                        .hotel__details__rating {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                        }
+
+                        .hotel__details__city {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                        }
+
+                        .hotel__details__adress {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                        }
+
+                        .hotel__details__address {
+                            font-size: 1.2rem;
+                            color: $color-almost-white-olive;
+                        }
+
+                        .hotel__details__available {
+                            font-size: 2rem;
+                            margin-top: 5%;
+                            width: 100%;
+                            text-align: center;
+                            background-color: $color-dark-green;
+                            border-radius: 15px;
+                            padding: 4% 0;
+                            color: white;
+                        }
+
+                        .hotel__details__login {
+                            font-size: 1.8rem;
+                            margin-top: 5%;
+                            width: 100%;
+                            text-align: center;
+                            background-color: $color-light-olive;
+                            border-radius: 15px;
+                            padding: 4% 0;
+                            color: $color-dark-green;
+                            font-weight: 700;
+                            border: 2px solid $color-dark-green;
+                            font-family: $font-serif;
+                        }
+
+                        .hotel__details__exit {
+                            position: fixed;
+                            top: 7%;
+                            right: 7%;
+                            font-size: 3rem;
+                            height: 5vh;
+                            width: 5vh;
+                            background-color: $color-light-olive;
+                            border-radius: 50%;
+                            border: 2px solid $color-dark-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
