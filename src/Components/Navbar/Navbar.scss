@@ -98,6 +98,10 @@
                 @include small_desktop {
                     color: $color-almost-white-olive;
                 }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
             .navbar__hamburger__exit {
@@ -146,6 +150,10 @@
                 background-color: $color-light-olive;
                 color: $color-almost-white-olive;
                 box-shadow: 4px 4px 5px 0px $color-light-olive;
+
+                &:hover {
+                    text-decoration: underline;
+                }
 
                 @include small_desktop {
                     margin: 0 8px;

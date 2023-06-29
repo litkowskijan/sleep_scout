@@ -252,21 +252,26 @@ const Search2 = () => {
                     {activeHotel === index && (
                       <div className='hotel__details__box'>
                         <div className='hotel__details__content'><div className='inner'>
+                          <div className='hotel__details__exit__box'>
+                            <VscClose className='hotel__details__exit'onClick={hideHotelDetails} />
+                          </div>
                           <img src={hotel.imgUrl} alt='hotel-pic'></img>
                           <div className='hotel__details__info'>
-                            <h3 className='hotel__details__title'>{hotel.name}</h3>
-                            <p className='hotel__details__description' >{hotel.longDescription}</p>
-                            <p className='hotel__details__final__price' >{finalDays * hotel.price} $ / {finalDays} nights</p>
-                            <p className='hotel__details__price' >{hotel.price} $ / night</p>
-                            <p className='hotel__details__other__info'>Other info:</p>
-                            <p className='hotel__details__guests' >- For {hotel.guests} guests</p>
-                            <p className='hotel__details__beds' >- {hotel.beds} beds</p>
-                            <p className='hotel__details__rating' >- Rating {hotel.stars}/5 stars</p>
-                            <p className='hotel__details__city' >- City: {hotel.city}</p>
-                            <p className='hotel__details__address' >- Address: {hotel.address}</p>
-                            <p className='hotel__details__available' >{hotel.isAvailable ? 'Avaible' : 'Not avaible'}</p>
-                            <button className='hotel__details__login'>For more details - Log in</button>
-                            <VscClose className='hotel__details__exit'onClick={hideHotelDetails} />
+                            <ul>
+                              <li className='hotel__details__title'>{hotel.name}</li>
+                              <li className='hotel__details__description' >{hotel.longDescription}</li>
+                              <li className='hotel__details__final__price' >{finalDays * hotel.price} $ / {finalDays} nights</li>
+                              <li className='hotel__details__price' >{hotel.price} $ / night</li>
+                              <li className='hotel__details__other__info'>Other info:</li>
+                              <li className='hotel__details__guests' >- For {hotel.guests} guests</li>
+                              <li className='hotel__details__beds' >- {hotel.beds} beds</li>
+                              <li className='hotel__details__rating' >- Rating {hotel.stars}/5 stars</li>
+                              <li className='hotel__details__city' >- City: {hotel.city}</li>
+                              <li className='hotel__details__address' >- Address: {hotel.address}</li>
+                              <li className='hotel__details__available' >{hotel.isAvailable ? 'Available' : 'Not available'}</li>
+                              <li className='hotel__details__login'>For more details - Log in</li>
+                            </ul>
+                            
                           </div></div>
                         </div>
                       </div>

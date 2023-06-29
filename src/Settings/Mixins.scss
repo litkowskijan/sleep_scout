@@ -1,7 +1,7 @@
 //media-queries
 
 @mixin tablet {
-    @media (mix-width: 480px) {
+    @media (min-width: 480px) {
         @content;
     }
 }

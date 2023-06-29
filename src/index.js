@@ -1,23 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './app';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SearchPage from './searchpage';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />
-  },
-  {
-    path: "/searchpage",
-    element: <SearchPage />
-  }
-])
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/searchpage" element={<SearchPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <>
-    <RouterProvider router={router} />
-  </>
-);
+ReactDOM.render(<Root />, document.getElementById('root'));

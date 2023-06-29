@@ -11,7 +11,7 @@
       "stars": 3.8,
       "city": "Warsaw",
       "address": "Ul. Nowowiejska 15, 00-665 Warsaw",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/qH56GHI.jpg",
       "isAvailable": true
     },
     {
@@ -25,7 +25,7 @@
       "stars": 4.5,
       "city": "Warsaw",
       "address": "Plac Zamkowy 10, 00-001 Warsaw",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/WB0vTkq.jpg",
       "isAvailable": true
     },
     {
@@ -39,7 +39,7 @@
       "stars": 4.3,
       "city": "Warsaw",
       "address": "Aleje Ujazdowskie 20, 00-001 Warsaw",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/GhZHqi2.jpg",
       "isAvailable": true
     },
     {
@@ -53,7 +53,7 @@
       "stars": 3.9,
       "city": "Warsaw",
       "address": "Plac Centralny 5, 00-001 Warsaw",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/rw8Eyyo.jpg",
       "isAvailable": true
     },
     {
@@ -67,7 +67,7 @@
       "stars": 4.1,
       "city": "Warsaw",
       "address": "Bulwar Nadwiślański 30, 00-001 Warsaw",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/jYYBKKW.jpg",
       "isAvailable": true
     },
     {
@@ -81,7 +81,7 @@
       "stars": 4.6,
       "city": "Berlin",
       "address": "Berliner Platz 1, 10117 Berlin",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/7dwhuWR.jpg",
       "isAvailable": true
     },
     {
@@ -95,7 +95,7 @@
       "stars": 4.2,
       "city": "Berlin",
       "address": "Spreeufer 50, 10178 Berlin",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/OrEB7sB.jpg",
       "isAvailable": true
     },
     {
@@ -109,7 +109,7 @@
       "stars": 4.4,
       "city": "Berlin",
       "address": "Friedrichstraße 80, 10117 Berlin",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/PY6jaNz.jpg",
       "isAvailable": true
     },
     {
@@ -123,7 +123,7 @@
       "stars": 4.6,
       "city": "Berlin",
       "address": "Potsdamer Platz 1, 10785 Berlin",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/wWhLbd0.jpg",
       "isAvailable": true
     },
     {
@@ -137,7 +137,7 @@
       "stars": 4.3,
       "city": "Berlin",
       "address": "Alexanderplatz 5, 10178 Berlin",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/qWNiFW7.jpg",
       "isAvailable": true
     },
     {
@@ -151,7 +151,7 @@
       "stars": 4.7,
       "city": "Paris",
       "address": "Rue du Faubourg Saint-Honoré 100, 75008 Paris",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/lqWS4rr.jpg",
       "isAvailable": true
     },
     {
@@ -165,7 +165,7 @@
       "stars": 3.8,
       "city": "Paris",
       "address": "Quai de la Tournelle 50, 75005 Paris",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/rFgo6jG.jpg",
       "isAvailable": true
     },
     {
@@ -179,7 +179,7 @@
       "stars": 4.4,
       "city": "Paris",
       "address": "Rue des Jardins 80, 75004 Paris",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/3Nxe8je.jpg",
       "isAvailable": true
     },
     {
@@ -193,7 +193,7 @@
       "stars": 4.6,
       "city": "Paris",
       "address": "Avenue de la Grande Vue 1, 75016 Paris",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/ICyCwfM.jpg",
       "isAvailable": true
     },
     {
@@ -207,7 +207,7 @@
       "stars": 4.3,
       "city": "Paris",
       "address": "Rue de la Tour Eiffel 5, 75007 Paris",
-      "imgUrl": "https://i.imgur.com/pTY3Ip5.png",
+      "imgUrl": "https://i.imgur.com/aeLcSW7.jpg",
       "isAvailable": true
     }
   ]  

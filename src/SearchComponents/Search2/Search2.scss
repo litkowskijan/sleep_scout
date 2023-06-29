@@ -1,5 +1,6 @@
 .search__section2 {
     background-color: $color-dark-green;
+    padding-top: 10vh;
     
     .search__form {
         padding-top: 2vh;
@@ -271,16 +272,24 @@
                 left: 0;
                 height: 100vh;
                 width: 100vw;
-                background-color: rgba(0, 0, 0, 0.5);
+                background-color: rgba(0, 0, 0, 0.75);
                 @include flex;
                 z-index: 5;
 
+                
+
                 .hotel__details__content {
-                    width: 90%;
-                    height: 90%;
+                    width: 90vw;
+                    max-width: 500px;
+                    height: 90vh;
                     background-color: $color-light-olive;
                     border-radius: 15px;
                     overflow: auto;
+
+                    @media (min-width: 560px) {
+                        width: 80vw;
+                        height: 80vh;
+                    }
 
                     &::-webkit-scrollbar {
                         display: none;
@@ -290,8 +299,28 @@
                         width: 100%;
                         height: auto;
                         border-radius: 15px 15px 0 0;
+                        position: relative;
                     }
                     
+                    .hotel__details__exit__box {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .hotel__details__exit {
+                            font-size: 3rem;
+                            height: 5vh;
+                            width: 5vh;
+                            background-color: $color-light-olive;
+                            border-radius: 50%;
+                            border: 2px solid $color-dark-green;
+                            margin-bottom: -70px;
+                            transform: translate(-50%, 50%);
+                            z-index: 5;
+                            position: fixed;
+                        }
+                    }
+
                     .hotel__details__info {
                         padding: 5%;
 
@@ -385,18 +414,6 @@
                             font-weight: 700;
                             border: 2px solid $color-dark-green;
                             font-family: $font-serif;
-                        }
-
-                        .hotel__details__exit {
-                            position: fixed;
-                            top: 7%;
-                            right: 7%;
-                            font-size: 3rem;
-                            height: 5vh;
-                            width: 5vh;
-                            background-color: $color-light-olive;
-                            border-radius: 50%;
-                            border: 2px solid $color-dark-green;
                         }
                     }
                 }

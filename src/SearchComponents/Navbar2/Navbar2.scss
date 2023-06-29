@@ -9,7 +9,9 @@
 .navbar__section2 {
     height: 10vh;
     background: $color-light-olive;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 
     .navbar__container {
         display: flex;
@@ -96,9 +98,15 @@
             }
             
             .navbar__menu__el {
+                text-decoration: none;
+
                 @include small_desktop {
                     color: $color-dark-green;
                     font-weight: 600;
+                }
+
+                &:hover {
+                    text-decoration: underline;
                 }
             }
 
@@ -149,6 +157,9 @@
                 box-shadow: 2px 2px 12px 0px $color-dark-green;
                 color: $color-almost-white-olive;
 
+                &:hover {
+                    text-decoration: underline;
+                }
 
                 @include small_desktop {
                     margin: 0 8px;

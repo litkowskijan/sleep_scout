@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { VscMenu, VscClose } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 
 const Navbar2 = () => {
 
@@ -22,7 +23,7 @@ const Navbar2 = () => {
             <div className={HamburgerPosition}>                    
                     <ul className='navbar__menu'>
                         <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
-                        <li className='navbar__menu__el'>Home</li>
+                        <li><Link to='/' className='navbar__menu__el'>Home</Link></li>
                         <li className='navbar__menu__el'>Products</li>
                         <li className='navbar__menu__el'>Resources</li>
                         <li className='navbar__menu__el'>Contact</li>
