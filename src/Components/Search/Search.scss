@@ -95,6 +95,10 @@
             padding: auto;
             color: $color-dark-green;
             @include flex;
+            
+            &:hover {
+                text-decoration: underline;
+            }
 
             a {
                 color: $color-dark-green;

@@ -1,0 +1,105 @@
+@import '../../Settings/Variables.scss';
+@import '../../Settings/Mixins.scss';
+
+.about__section {
+
+    .about__container {
+        width: 90%;
+        margin: 0 auto;
+
+        .about__title {
+            font-size: 3rem;
+            margin: 100px 0 50px 0;
+        }
+
+        .about__lead__box {
+            font-size: 1.2rem;
+            margin: 30px 0;
+            font-family: $font-sans-serif;
+
+            .about__lead__underline {
+                height: 10px;
+                background-color: $color-dark-green;
+                width: 66%;
+                margin-top: 20px;
+            }
+        }
+        .about__image {
+            aspect-ratio: 1/1;
+            box-shadow: 20px 20px 0px 0px $color-dark-green;
+        }
+
+        .about__1row {
+            max-width: 1000px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+
+            @include small_desktop {
+                width: 100%;
+                flex-direction: row;
+            }
+
+            .about__lead__box {
+                
+                @include small_desktop {
+                    width: 66%;
+                    padding-right: 10%;
+                    margin: auto 0;
+                    font-size: 1rem;
+                }
+
+                @include desktop {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .about__image {
+                width: 80%;
+                margin: 0 auto;
+
+                @include small_desktop {
+                    width: 34%;
+                }
+            }
+        }
+
+        .about__2row {
+            max-width: 1000px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10vh;
+
+            @include small_desktop {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+                
+            }
+
+            .about__lead__box {
+                
+                @include small_desktop {
+                    width: 66%;
+                    padding-left: 10%;
+                    margin: auto 0;
+                    font-size: 1rem;
+                }
+
+                @include desktop {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .about__image {
+                width: 80%;
+                margin: 0 auto;
+
+                @include small_desktop {
+                    width: 34%;
+                }
+            }
+        }
+    }
+}

@@ -24,10 +24,10 @@ const Navbar2 = () => {
                     <ul className='navbar__menu'>
                         <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
                         <li><Link to='/' className='navbar__menu__el'>Home</Link></li>
-                        <li className='navbar__menu__el'>Products</li>
-                        <li className='navbar__menu__el'>Resources</li>
-                        <li className='navbar__menu__el'>Contact</li>
+                        <li className='navbar__menu__el'>About</li>
+                        <li className='navbar__menu__el'>Gallery</li>
                         <li className='navbar__menu__el'>Blog</li>
+                        <li className='navbar__menu__el'>Contact</li>
                     </ul>
                     <div className='navbar__buttons'>
                             <button className='navbar__btn btn__login'>Log in</button>

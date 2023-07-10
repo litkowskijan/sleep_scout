@@ -157,6 +157,7 @@
         .search__results {
             display: flex;
             flex-direction: column;
+            min-height: 80vh;
 
             @include small_desktop {
                 flex-direction: row;
@@ -263,6 +264,10 @@
                     font-family: $font-serif;
                     font-weight: 500;
                     color: $color-dark-green;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
 

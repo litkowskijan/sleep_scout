@@ -1,17 +1,10 @@
-.left_0 {
-    left: 0;
-}
-
-.left_500 {
-    left: -500%;
-}
-
 .navbar__section2 {
     height: 10vh;
     background: $color-light-olive;
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
+
 
     .navbar__container {
         display: flex;
@@ -29,6 +22,7 @@
         .navbar__hamburger__icon {
             height: 10vh;
             font-size: 2.5rem;
+            margin-left: auto;
             
             @include small_desktop {
                 display: none;
@@ -53,7 +47,7 @@
         background-color: $color-almost-white-olive;
         border-bottom: 1px solid $color-dark-green;
         max-width: 1280px;
-        z-index: 4;
+        z-index: 10;
 
         @include small_desktop {
             left: 5%;
@@ -98,12 +92,9 @@
             }
             
             .navbar__menu__el {
+                font-weight: 600;
+                color: $color-dark-green;
                 text-decoration: none;
-
-                @include small_desktop {
-                    color: $color-dark-green;
-                    font-weight: 600;
-                }
 
                 &:hover {
                     text-decoration: underline;
@@ -154,8 +145,8 @@
                 margin-top: -60px;
                 z-index: 2;
                 background-color: $color-light-olive;
-                box-shadow: 2px 2px 12px 0px $color-dark-green;
                 color: $color-almost-white-olive;
+                box-shadow: 4px 4px 5px 0px $color-light-olive;
 
                 &:hover {
                     text-decoration: underline;
@@ -171,6 +162,9 @@
                 }
             }
 
+            .btn__login {
+                box-shadow: 4px 4px 5px 0px $color-dark-green;
+            }
             .btn__signup {
                 background-color: $color-dark-green;
             }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { VscMenu, VscClose } from 'react-icons/vsc';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     
@@ -15,8 +16,23 @@ const Navbar = () => {
     }
     //-----HamburgerVisibility-----
 
+    //-----NavbarBackground-----
+    const [transparent, setTransparent] = useState('navbar__section')
+
+    const addColor = () => {
+        if(window.scrollY >= 10) {
+            setTransparent('navbar__section navbar__color')
+        }
+        else {
+            setTransparent('navbar__section')
+        }
+    }
+
+    window.addEventListener('scroll', addColor)
+    //-----NavbarBackground-----
+
     return (
-        <section className='navbar__section'>
+        <section className={transparent}>
             <div className='navbar__container container'>
                 <h1 className='navbar__logo'>Sleep Scout</h1>
                 <VscMenu onClick={showHamburger} className='navbar__hamburger__icon'/>
@@ -24,15 +40,15 @@ const Navbar = () => {
             <div className={HamburgerPosition}>                    
                     <ul className='navbar__menu'>
                         <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
-                        <li className='navbar__menu__el'>Home</li>
-                        <li className='navbar__menu__el'>Products</li>
-                        <li className='navbar__menu__el'>Resources</li>
-                        <li className='navbar__menu__el'>Contact</li>
+                        <li><Link to='home' smooth={true} spy={true} className='navbar__menu__el' onClick={hideHamburger}>Home</Link></li>
+                        <li><Link to='about' smooth={true} spy={true} offset={-150} className='navbar__menu__el' onClick={hideHamburger}>About</Link></li>
+                        <li className='navbar__menu__el'>Gallery</li>
                         <li className='navbar__menu__el'>Blog</li>
+                        <li className='navbar__menu__el'>Contact</li>
                     </ul>
                     <div className='navbar__buttons'>
-                            <button className='navbar__btn btn__login'>Log in</button>
-                            <button className='navbar__btn btn__signup'>Sign up</button>
+                        <button className='navbar__btn btn__login'>Log in</button>
+                        <button className='navbar__btn btn__signup'>Sign up</button>
                     </div>
             </div>
         </section>
