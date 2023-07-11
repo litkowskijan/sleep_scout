@@ -41,9 +41,9 @@ const Navbar = () => {
                     <ul className='navbar__menu'>
                         <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
                         <li><Link to='home' smooth={true} spy={true} className='navbar__menu__el' onClick={hideHamburger}>Home</Link></li>
-                        <li><Link to='about' smooth={true} spy={true} offset={-150} className='navbar__menu__el' onClick={hideHamburger}>About</Link></li>
-                        <li className='navbar__menu__el'>Gallery</li>
-                        <li className='navbar__menu__el'>Blog</li>
+                        <li><Link to='about' smooth={true} spy={true} offset={-30} className='navbar__menu__el' onClick={hideHamburger}>About</Link></li>
+                        <li><Link to='gallery' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Gallery</Link></li>
+                        <li><Link to='blog' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Blog</Link></li>
                         <li className='navbar__menu__el'>Contact</li>
                     </ul>
                     <div className='navbar__buttons'>

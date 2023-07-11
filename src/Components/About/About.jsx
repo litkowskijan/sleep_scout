@@ -17,7 +17,7 @@ const About = () => {
                         </p>
                         <div className='about__lead__underline'></div>
                     </div>
-                    <img src={about1} className='about__image' alt='about image 1'></img>
+                    <img src={about1} className='about__image' alt='about1'></img>
                 </div>
                 <div className='about__2row'>
                     <div className='about__lead__box'>
@@ -29,7 +29,7 @@ const About = () => {
                         </p>
                         <div className='about__lead__underline'></div>
                     </div>
-                    <img src={about2} className='about__image' alt='about image 2'></img>
+                    <img src={about2} className='about__image' alt='about2'></img>
                 </div>
             </div>
         </div>

@@ -279,9 +279,7 @@
                 width: 100vw;
                 background-color: rgba(0, 0, 0, 0.75);
                 @include flex;
-                z-index: 5;
-
-                
+                z-index: 11;
 
                 .hotel__details__content {
                     width: 90vw;
