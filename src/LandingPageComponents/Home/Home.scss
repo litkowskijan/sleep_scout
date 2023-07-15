@@ -1,0 +1,30 @@
+.home__section {   
+    background-image: url('../../Assets/home_pic.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    
+    .home__container {
+        width: 90%;
+        @include flex;
+        flex-direction: column;
+        margin: auto;
+        height: 70vh;
+
+        .home__title {
+            color: $color-almost-white-olive;
+            width: 100%;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 100;
+        }
+
+        .home__lead {
+            color: $color-almost-white-olive;
+            font-family: $font-sans-serif;
+            font-weight: 200;
+            font-size: 1.5rem;
+            width: 100%;
+        }
+    }
+}

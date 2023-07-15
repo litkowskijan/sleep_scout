@@ -1,14 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-import About from './Components/About/About';
-import Blog from './Components/Blog/Blog';
-import Footer from './Components/Footer/Footer';
-import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
-import Gallery from './Components/Gallery/Gallery';
-import Search from './Components/Search/Search';
-import Contact from './Components/Contact/Contact';
+import About from './LandingPageComponents/About/About';
+import Blog from './LandingPageComponents/Blog/Blog';
+import Footer from './LandingPageComponents/Footer/Footer';
+import Home from './LandingPageComponents/Home/Home';
+import Navbar from './LandingPageComponents/Navbar/Navbar';
+import Gallery from './LandingPageComponents/Gallery/Gallery';
+import Search from './LandingPageComponents/Search/Search';
+import Contact from './LandingPageComponents/Contact/Contact';
 
 import './app.scss';
 

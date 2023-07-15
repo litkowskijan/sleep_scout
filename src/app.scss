@@ -3,14 +3,14 @@
 @import './Settings/Mixins.scss';
 @import './Settings/Variables.scss';
 
-@import './Components/About/About.scss';
-@import './Components/Blog/Blog.scss';
-@import './Components/Footer/Footer.scss';
-@import './Components/Home/Home.scss';
-@import './Components/Navbar/Navbar.scss';
-@import './Components/Gallery/Gallery.scss';
-@import './Components/Search/Search.scss';
-@import './Components/Contact/Contact.scss';
+@import './LandingPageComponents/About/About.scss';
+@import './LandingPageComponents/Blog/Blog.scss';
+@import './LandingPageComponents/Footer/Footer.scss';
+@import './LandingPageComponents/Home/Home.scss';
+@import './LandingPageComponents/Navbar/Navbar.scss';
+@import './LandingPageComponents/Gallery/Gallery.scss';
+@import './LandingPageComponents/Search/Search.scss';
+@import './LandingPageComponents/Contact/Contact.scss';
 
 @import './SearchComponents/Navbar2/Navbar2.scss';
 @import './SearchComponents/Search2/Search2.scss';
