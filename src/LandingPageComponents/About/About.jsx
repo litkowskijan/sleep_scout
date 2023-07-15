@@ -31,6 +31,7 @@ const About = () => {
                     </div>
                     <img src={about2} className='about__image' alt='about2'></img>
                 </div>
+                <button className='about__button'>Read more</button>
             </div>
         </div>
     );

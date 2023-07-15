@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar2 from './SearchComponents/Navbar2/Navbar2'
 import Search2 from './SearchComponents/Search2/Search2';
+import Footer from './LandingPageComponents/Footer/Footer';
 import { useEffect } from 'react';
 
 const SearchPage = () => {
@@ -13,6 +14,7 @@ const SearchPage = () => {
         <>
             <Navbar2 />
             <Search2 />
+            <Footer />
         </>
     );
 }
