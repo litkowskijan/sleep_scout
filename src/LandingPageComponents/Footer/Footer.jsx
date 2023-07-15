@@ -30,9 +30,9 @@ const Footer = () => {
                     <div className='footer__number'>(415) 928-8944</div>
                     <div className='footer__email'>info@sleepscout.com</div>
                     <div className='footer__socials'>
-                        <FaFacebookSquare className='footer__social__icon' />
-                        <FaInstagramSquare className='footer__social__icon' />
-                        <FaYoutube className='footer__social__icon' />
+                        <a href='https://facebook.com/' target='_blank' rel="noreferrer"><FaFacebookSquare className='footer__social__icon' /></a>
+                        <a href='https://instagram.com/' target='_blank' rel="noreferrer"><FaInstagramSquare className='footer__social__icon' /></a>
+                        <a href='https://youtube.com/' target='_blank' rel="noreferrer"><FaYoutube className='footer__social__icon' /></a>
                     </div>
                 </div>
             </div>
