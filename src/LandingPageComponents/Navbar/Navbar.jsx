@@ -44,7 +44,7 @@ const Navbar = () => {
                         <li><Link to='about' smooth={true} spy={true} offset={-30} className='navbar__menu__el' onClick={hideHamburger}>About</Link></li>
                         <li><Link to='gallery' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Gallery</Link></li>
                         <li><Link to='blog' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Blog</Link></li>
-                        <li className='navbar__menu__el'>Contact</li>
+                        <li><Link to='contact' smooth={true} spy={true} offset={-40} className='navbar__menu__el' onClick={hideHamburger}>Contact</Link></li>
                     </ul>
                     <div className='navbar__buttons'>
                         <button className='navbar__btn btn__login'>Log in</button>

@@ -167,9 +167,10 @@
             .hotel__box {
                 width: 100%;
                 background-color: $color-dark-green;
-                margin: 2.5% 0;
+                margin: 2.5% auto;
                 border-radius: 20px;
                 box-shadow: 0px 0px 50px 0px $color-dark-green;
+                max-width: 500px;
 
                 @include small_desktop {
                     width: 48%;
