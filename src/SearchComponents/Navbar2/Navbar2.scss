@@ -4,13 +4,14 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
 
     .navbar__container {
         display: flex;
         justify-content: space-between;
         width: 90%;
         margin: auto;
+        max-width: 1380px;
 
         .navbar__logo {
             line-height: 10vh;
@@ -46,7 +47,7 @@
         transition: 0.5s ease;
         background-color: $color-almost-white-olive;
         border-bottom: 1px solid $color-dark-green;
-        max-width: 1280px;
+        max-width: 1380px;
         z-index: 10;
 
         @include small_desktop {
@@ -146,7 +147,7 @@
                 z-index: 2;
                 background-color: $color-light-olive;
                 color: $color-almost-white-olive;
-                box-shadow: 4px 4px 5px 0px $color-light-olive;
+                box-shadow: 4px 4px 5px 0px $color-dark-green;
 
                 &:hover {
                     text-decoration: underline;
@@ -162,9 +163,6 @@
                 }
             }
 
-            .btn__login {
-                box-shadow: 4px 4px 5px 0px $color-dark-green;
-            }
             .btn__signup {
                 background-color: $color-dark-green;
             }

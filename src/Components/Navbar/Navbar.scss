@@ -26,6 +26,7 @@
         box-shadow: 4px 4px 5px 0px $color-dark-green !important;
     }
 }
+
 .navbar__section {
     height: 10vh;
     background: transparent;
@@ -38,6 +39,7 @@
         justify-content: space-between;
         width: 90%;
         margin: auto;
+        max-width: 1380px;
 
         .navbar__logo {
             line-height: 10vh;
@@ -73,7 +75,7 @@
         transition: 0.5s ease;
         background-color: $color-almost-white-olive;
         border-bottom: 1px solid $color-dark-green;
-        max-width: 1280px;
+        max-width: 1380px;
         z-index: 10;
 
         @include small_desktop {

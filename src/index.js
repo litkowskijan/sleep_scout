@@ -9,12 +9,13 @@ const Root = () => {
   return (
     <>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/searchpage" element={<SearchPage />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/searchpage" element={<SearchPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
+
 createRoot(document.getElementById('root')).render(<Root />);
