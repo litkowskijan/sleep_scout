@@ -133,3 +133,16 @@
         }
     }
 }
+
+.form__error {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.form__message__sent {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}

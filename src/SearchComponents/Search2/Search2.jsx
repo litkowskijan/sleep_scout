@@ -4,21 +4,10 @@ import { differenceInDays, format } from 'date-fns';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { VscClose } from 'react-icons/vsc';
+import firebaseConfig from '../../firebase'
 import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-
-const firebaseConfig = {
-  apiKey: "AIzaSyD2KLGqcf_TGi-my17xSb4x2rMZ3oVTpIw",
-  authDomain: "sleep-scout.firebaseapp.com",
-  projectId: "sleep-scout",
-  storageBucket: "sleep-scout.appspot.com",
-  messagingSenderId: "936988698119",
-  appId: "1:936988698119:web:bbafa4149a1fec786e2ca2",
-  measurementId: "G-3V4W16BL1D"
-};
 
 firebase.initializeApp(firebaseConfig);
-
 const db = firebase.firestore();
 const hotelsRef = db.collection('hotels');
 
