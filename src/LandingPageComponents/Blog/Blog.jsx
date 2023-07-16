@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogImage from '../../Assets/blog_pic.jpg';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     return (
@@ -17,7 +18,7 @@ const Blog = () => {
                         Get ready to embark on an extraordinary voyage through our virtual travel journal and let your imagination soar.
                     </p>
                 </div>
-                <button className='blog__button'>Blog</button>
+                <Link to='/blogpage' className='blog__button'>Blog</Link>
             </div>
         </div>
     );

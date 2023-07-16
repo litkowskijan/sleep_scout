@@ -26,7 +26,7 @@ const Navbar2 = () => {
                         <li><Link to='/' className='navbar__menu__el'>Home</Link></li>
                         <li className='navbar__menu__el'>About</li>
                         <li className='navbar__menu__el'>Gallery</li>
-                        <li className='navbar__menu__el'>Blog</li>
+                        <li><Link to='/blogpage' className='navbar__menu__el'>Blog</Link></li>
                         <li className='navbar__menu__el'>Contact</li>
                     </ul>
                     <div className='navbar__buttons'>
