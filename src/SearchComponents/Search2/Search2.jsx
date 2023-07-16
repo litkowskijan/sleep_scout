@@ -12,6 +12,7 @@ const db = firebase.firestore();
 const hotelsRef = db.collection('hotels');
 
 const Search2 = () => {
+
   const [dateRange, setDateRange] = useState([
     {
       startDate: new Date(localStorage.getItem('Date From')),
@@ -198,8 +199,7 @@ const Search2 = () => {
                 id="sort"
                 className="sort__select select-option"
                 value={sortBy}
-                onChange={handleSortChange}
-              >
+                onChange={handleSortChange}>
                 <option className="sort__option" value="">
                   None
                 </option>

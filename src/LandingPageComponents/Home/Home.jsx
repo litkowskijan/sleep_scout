@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Home = () => {
-
     return (
         <section className='home__section' id='home'>
             <div className='home__container container'>

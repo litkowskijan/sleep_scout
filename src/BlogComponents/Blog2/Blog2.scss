@@ -20,6 +20,7 @@
                 width: 30%;
                 margin-top: 83px;
             }
+
             .blog__category {
                 padding: 20px;
                 border: 1px solid $color-dark-green;
@@ -32,6 +33,7 @@
             @include small_desktop {
                 width: 65%;
             }
+
             .blog__article__title {
                 font-size: 3rem;
                 margin: 20px 0;
@@ -62,7 +64,6 @@
                     margin-top: -3px;
                 }
             }
-            
         }
     }
 }

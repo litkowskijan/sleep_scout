@@ -8,6 +8,7 @@ firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 
 const Blog2 = () => {
+    
     const categoryRef = firestore.collection('articles').orderBy('category');
     const articlesRef = firestore.collection('articles');
     const [category] = useCollection(categoryRef);

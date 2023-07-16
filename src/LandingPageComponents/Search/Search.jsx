@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Search = () => {
 
-    //-----DateRange-----
     const [dateRange, setDateRange] = useState([
         {
             startDate: new Date(),
@@ -23,11 +22,7 @@ const Search = () => {
     const handleSelect = (ranges) => {
         setDateRange([ranges.selection]);
     }
-    //-----DateRange-----
 
-
-
-    //-----ValuesToLocalStorage-----
     const [cityValue, setCityValue] = useState('');
 
     const handleCityInput = (e) => {
@@ -49,11 +44,7 @@ const Search = () => {
         localStorage.setItem('Date Key', dateRange[0].key);
         localStorage.setItem('Guests Value', guestsValue);
     }
-    //-----ValuesToLocalStorage-----
 
-
-    
-    //-----CalendarVisibility-----
     const[calVisible, setCalVisible] = useState(false);
 
     const handleFocus = () => {
@@ -63,13 +54,11 @@ const Search = () => {
     const handleFocusOut = () => {
         setCalVisible(false);
     }
-    //-----CalendarVisibility-----
 
     return (
         <>
         <section className='search__section'>
             <div className='search__form container'>
-
                 <div className='destination__box' >
                     <label htmlFor='destination' className='label__class'>Destination</label>
                     <input 
@@ -78,7 +67,6 @@ const Search = () => {
                     onChange={handleCityInput}
                      />
                 </div>
-
                 <div className='date__range__box'>
                     <label htmlFor='date-range'>Choose date</label>
                     <input className='date__range__input'
@@ -87,7 +75,6 @@ const Search = () => {
                         value={`${formatDate(dateRange[0].startDate)} - ${formatDate(dateRange[0].endDate)}`}                    readOnly
                     />
                 </div>
-                
                 <div className='guests__box'>
                     <label htmlFor='guests-number'>Guests</label>
                     <input 
@@ -96,17 +83,14 @@ const Search = () => {
                     onChange={handleGuestsInput}
                     />
                 </div>
-                
                 <Link
                 to='/searchpage'
                 className='search__button'
-                onClick={handleSearch}
-                >Search</Link>
-
+                onClick={handleSearch}>
+                    Search
+                </Link>
             </div>
-
         </section>
-
         <div>
             {calVisible && <div className='calendar__box'>
                 <DateRangePicker

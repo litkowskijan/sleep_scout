@@ -1,5 +1,6 @@
 .footer__section {
     background-color: $color-dark-green;
+
     @include small_desktop {
         height: 350px;
     }
@@ -13,6 +14,7 @@
         @include small_desktop {
             flex-direction: row;
         }
+
         .footer__1stpart {
 
             @include small_desktop {
@@ -58,7 +60,6 @@
                         text-decoration: none;
                     }
                 }
-                
             }
         }
 
@@ -74,7 +75,6 @@
                 font-size: 1.5rem;
                 padding-bottom: 20px;
                 
-
                 @include small_desktop {
                     font-size: 1.2rem;
                     text-align: end;
@@ -90,7 +90,6 @@
                 font-size: 1.5rem;
                 padding-bottom: 20px;
                 
-
                 @include small_desktop {
                     font-size: 1.2rem;
                     text-align: end;

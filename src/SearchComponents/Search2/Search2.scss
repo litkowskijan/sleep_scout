@@ -80,8 +80,6 @@
     }
 }
 
-
-
 .search__page__section {
     min-height: 200px;
     background-color: $color-almost-white-olive;
@@ -135,12 +133,11 @@
                     @include small_desktop {
                         width: 70%;
                     }
+
                     &:focus {
                         outline: none;
                         border-bottom: 3px solid $color-dark-green;
                     }
-
-                    
 
                     .sort__option {
                         background-color: $color-almost-white-olive;
@@ -292,7 +289,7 @@
 
                     &::-webkit-scrollbar {
                         display: none;
-                      }
+                    }
 
                     img {
                         width: 100%;

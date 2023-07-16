@@ -6,7 +6,6 @@ import LandingPage from './landingpage';
 import BlogPage from './blogpage';
 
 const Root = () => {
-
   return (
     <>
       <BrowserRouter>

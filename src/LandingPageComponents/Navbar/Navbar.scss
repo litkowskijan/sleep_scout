@@ -122,6 +122,7 @@
             
             .navbar__menu__el {
                 font-weight: 600;
+
                 @include small_desktop {
                     color: $color-almost-white-olive;
                 }

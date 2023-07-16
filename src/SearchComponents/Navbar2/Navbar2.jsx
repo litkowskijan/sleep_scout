@@ -21,18 +21,18 @@ const Navbar2 = () => {
                 <VscMenu onClick={showHamburger} className='navbar__hamburger__icon'/>
             </div>
             <div className={HamburgerPosition}>                    
-                    <ul className='navbar__menu'>
-                        <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
-                        <li><Link to='/' className='navbar__menu__el'>Home</Link></li>
-                        <li className='navbar__menu__el'>About</li>
-                        <li className='navbar__menu__el'>Gallery</li>
-                        <li><Link to='/blogpage' className='navbar__menu__el'>Blog</Link></li>
-                        <li className='navbar__menu__el'>Contact</li>
-                    </ul>
-                    <div className='navbar__buttons'>
-                            <button className='navbar__btn btn__login'>Log in</button>
-                            <button className='navbar__btn btn__signup'>Sign up</button>
-                    </div>
+                <ul className='navbar__menu'>
+                    <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
+                    <li><Link to='/' className='navbar__menu__el'>Home</Link></li>
+                    <li className='navbar__menu__el'>About</li>
+                    <li className='navbar__menu__el'>Gallery</li>
+                    <li><Link to='/blogpage' className='navbar__menu__el'>Blog</Link></li>
+                    <li className='navbar__menu__el'>Contact</li>
+                </ul>
+                <div className='navbar__buttons'>
+                        <button className='navbar__btn btn__login'>Log in</button>
+                        <button className='navbar__btn btn__signup'>Sign up</button>
+                </div>
             </div>
         </section>
     );

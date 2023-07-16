@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
     
-    //-----HamburgerVisibility-----
     const [HamburgerPosition, setHamburgerPosition] = useState('navbar__hamburger left_500')
 
     const showHamburger = () => {
@@ -14,9 +13,7 @@ const Navbar = () => {
     const hideHamburger = () => {
         setHamburgerPosition('navbar__hamburger left_500')
     }
-    //-----HamburgerVisibility-----
 
-    //-----NavbarBackground-----
     const [transparent, setTransparent] = useState('navbar__section')
 
     const addColor = () => {
@@ -29,7 +26,6 @@ const Navbar = () => {
     }
 
     window.addEventListener('scroll', addColor)
-    //-----NavbarBackground-----
 
     return (
         <section className={transparent}>
@@ -38,18 +34,18 @@ const Navbar = () => {
                 <VscMenu onClick={showHamburger} className='navbar__hamburger__icon'/>
             </div>
             <div className={HamburgerPosition}>                    
-                    <ul className='navbar__menu'>
-                        <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
-                        <li><Link to='home' smooth={true} spy={true} className='navbar__menu__el' onClick={hideHamburger}>Home</Link></li>
-                        <li><Link to='about' smooth={true} spy={true} offset={-30} className='navbar__menu__el' onClick={hideHamburger}>About</Link></li>
-                        <li><Link to='gallery' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Gallery</Link></li>
-                        <li><Link to='blog' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Blog</Link></li>
-                        <li><Link to='contact' smooth={true} spy={true} offset={-40} className='navbar__menu__el' onClick={hideHamburger}>Contact</Link></li>
-                    </ul>
-                    <div className='navbar__buttons'>
-                        <button className='navbar__btn btn__login'>Log in</button>
-                        <button className='navbar__btn btn__signup'>Sign up</button>
-                    </div>
+                <ul className='navbar__menu'>
+                    <VscClose onClick={hideHamburger} className='navbar__hamburger__exit'/>
+                    <li><Link to='home' smooth={true} spy={true} className='navbar__menu__el' onClick={hideHamburger}>Home</Link></li>
+                    <li><Link to='about' smooth={true} spy={true} offset={-30} className='navbar__menu__el' onClick={hideHamburger}>About</Link></li>
+                    <li><Link to='gallery' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Gallery</Link></li>
+                    <li><Link to='blog' smooth={true} spy={true} offset={-50} className='navbar__menu__el' onClick={hideHamburger}>Blog</Link></li>
+                    <li><Link to='contact' smooth={true} spy={true} offset={-40} className='navbar__menu__el' onClick={hideHamburger}>Contact</Link></li>
+                </ul>
+                <div className='navbar__buttons'>
+                    <button className='navbar__btn btn__login'>Log in</button>
+                    <button className='navbar__btn btn__signup'>Sign up</button>
+                </div>
             </div>
         </section>
     );
