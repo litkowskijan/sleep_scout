@@ -15,6 +15,14 @@ const Blog2 = () => {
     const [articles] = useCollection(articlesRef);
     const [selectedCategory, setSelectedCategory] = useState('All categories');
 
+    if (!category) {
+        return <div className='blog2__section'></div>;
+    }
+
+    if (!articles) {
+        return <div className='blog2__section'></div>;
+    }
+
     if (!category || !category.docs || !articles || !articles.docs) {
         return <div>Loading...</div>;
     }
