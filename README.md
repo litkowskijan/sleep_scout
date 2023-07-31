@@ -1,5 +1,5 @@
 # Sleep-scout (in-progress)
 
-# Live demo
+## Live demo
 
 App live version: https://sleepscout.netlify.app/
